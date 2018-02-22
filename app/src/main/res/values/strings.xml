@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VidaGraphics</string>
+    <string name="email">vida.graphics@gmail.com</string>
+    <string name="web">www.vidagraphics.com</string>
+    <string name="phoneNumber">0043/ 678 1213 049</string>
+    <string name="phoneNumberToDial">tel:00436781213049</string>
+    <string name="address">Stephansplatz 1, 1000 Vienna, Austria</string>
+</resources>
