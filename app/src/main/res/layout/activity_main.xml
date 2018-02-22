@@ -1,212 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.vidagraphics.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <TextView
-            android:id="@+id/head"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="sans-serif"
-            android:padding="7dp"
-            android:text="@string/app_name"
-            android:textSize="24sp" />
-
-        <ImageView
-            android:id="@+id/imageview"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_below="@id/head"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/ananas" />
-
-        <TableLayout
-            android:id="@+id/workDaysTable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageview"
-            android:padding="10dp"
-            android:stretchColumns="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/head"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:paddingTop="2dp"
-                android:text="Opening hours:" />
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:padding="7dp"
+                android:text="@string/app_name"
+                android:textSize="24sp" />
 
-            <TableRow>
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/head"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ananas" />
 
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Monday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="9:00 - 18:00" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Tuesday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="9:00 - 18:00" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Wednesday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="9:00 - 18:00" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Thursday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="9:00 - 18:00" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Friday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="9:00 - 18:00" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Saturday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="Closed" />
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:paddingTop="2dp"
-                    android:text="Sunday" />
-
-                <TextView
-                    android:paddingLeft="20dp"
-                    android:text="Closed" />
-            </TableRow>
-        </TableLayout>
-
-        <TableLayout
-            android:id="@+id/contactTable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:padding="10dp">
-
-            <TextView
+            <TableLayout
+                android:id="@+id/workDaysTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingTop="2dp"
-                android:text="Ways to contact me:" />
-
-            <TableRow>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:autoLink="web"
-                    android:clickable="true"
-                    android:onClick="openWeb"
-                    android:src="@drawable/www" />
-
-                <TextView
-                    android:id="@+id/web"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="www.vidagraphics.com" />
-            </TableRow>
-
-            <TableRow>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:clickable="true"
-                    android:onClick="sendEmail"
-                    android:src="@drawable/gmail" />
+                android:layout_below="@+id/imageview"
+                android:padding="10dp"
+                android:stretchColumns="1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/email" />
-            </TableRow>
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:text="Opening hours:" />
 
-            <TableRow>
+                <TableRow>
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:clickable="true"
-                    android:onClick="phoneCall"
-                    android:src="@drawable/phone" />
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Monday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="9:00 - 18:00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Tuesday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="9:00 - 18:00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Wednesday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="9:00 - 18:00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Thursday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="9:00 - 18:00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Friday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="9:00 - 18:00" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Saturday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="Closed" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingTop="2dp"
+                        android:text="Sunday" />
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:text="Closed" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/contactTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workDaysTable"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/phonenumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/phoneNumber" />
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:text="Ways to contact me:" />
 
-            </TableRow>
+                <TableRow>
 
-            <TableRow>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:autoLink="web"
+                        android:clickable="true"
+                        android:onClick="openWeb"
+                        android:src="@drawable/www" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:clickable="true"
-                    android:onClick="openMap"
-                    android:src="@drawable/gmaps" />
+                    <TextView
+                        android:id="@+id/web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="www.vidagraphics.com" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/address"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingLeft="20dp"
-                    android:text="@string/address" />
-            </TableRow>
-        </TableLayout>
+                <TableRow>
 
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:onClick="sendEmail"
+                        android:src="@drawable/gmail" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/email" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:onClick="phoneCall"
+                        android:src="@drawable/phone" />
+
+                    <TextView
+                        android:id="@+id/phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/phoneNumber" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:onClick="openMap"
+                        android:src="@drawable/gmaps" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="@string/address" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>
