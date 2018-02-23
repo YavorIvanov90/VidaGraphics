@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Used to open email app to send email
     public void sendEmail(View view) {
-        String to = getString(R.string.email).toString();
+        String to = getString(R.string.email);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(intent.EXTRA_EMAIL, to);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Used to open call app to dial the number
     public void phoneCall(View view) {
-        String to = getString(R.string.phoneNumberToDial).toString();
+        String to = getString(R.string.phoneNumberToDial);
         Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
         phoneIntent.setData(Uri.parse(to));
         if (phoneIntent.resolveActivity(getPackageManager()) != null) {

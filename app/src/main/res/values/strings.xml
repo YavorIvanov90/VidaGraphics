@@ -5,4 +5,15 @@
     <string name="phoneNumber">0043/ 678 1213 049</string>
     <string name="phoneNumberToDial">tel:00436781213049</string>
     <string name="address">Stephansplatz 1, 1000 Vienna, Austria</string>
+    <string name="workhours">9:00 - 18:00</string>
+    <string name="closed">Closed</string>
+    <string name="openhours">Opening hours:</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="waystocontact">Ways to contact me:</string>
 </resources>

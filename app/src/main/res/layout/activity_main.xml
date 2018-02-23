@@ -10,15 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/head"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif"
                 android:padding="7dp"
                 android:text="@string/app_name"
@@ -26,17 +27,15 @@
 
             <ImageView
                 android:id="@+id/imageview"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_below="@id/head"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/ananas" />
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon" />
 
             <TableLayout
                 android:id="@+id/workDaysTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageview"
                 android:padding="10dp"
                 android:stretchColumns="1">
 
@@ -45,83 +44,83 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:paddingTop="2dp"
-                    android:text="Opening hours:" />
+                    android:text="@string/openhours" />
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Monday" />
+                        android:text="@string/monday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="9:00 - 18:00" />
+                        android:text="@string/workhours" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Tuesday" />
+                        android:text="@string/tuesday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="9:00 - 18:00" />
+                        android:text="@string/workhours" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Wednesday" />
+                        android:text="@string/wednesday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="9:00 - 18:00" />
+                        android:text="@string/workhours" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Thursday" />
+                        android:text="@string/thursday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="9:00 - 18:00" />
+                        android:text="@string/workhours" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Friday" />
+                        android:text="@string/friday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="9:00 - 18:00" />
+                        android:text="@string/workhours" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Saturday" />
+                        android:text="@string/saturday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="Closed" />
+                        android:text="@string/closed" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
                         android:paddingTop="2dp"
-                        android:text="Sunday" />
+                        android:text="@string/sunday" />
 
                     <TextView
                         android:paddingLeft="20dp"
-                        android:text="Closed" />
+                        android:text="@string/closed" />
                 </TableRow>
             </TableLayout>
 
@@ -129,8 +128,6 @@
                 android:id="@+id/contactTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/workDaysTable"
-                android:layout_alignParentBottom="true"
                 android:padding="10dp">
 
                 <TextView
@@ -139,7 +136,7 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingTop="2dp"
-                    android:text="Ways to contact me:" />
+                    android:text="@string/waystocontact" />
 
                 <TableRow>
 
@@ -148,6 +145,7 @@
                         android:layout_height="40dp"
                         android:autoLink="web"
                         android:clickable="true"
+                        android:focusable="true"
                         android:onClick="openWeb"
                         android:src="@drawable/www" />
 
@@ -156,7 +154,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="www.vidagraphics.com" />
+                        android:text="@string/web" />
                 </TableRow>
 
                 <TableRow>
@@ -165,6 +163,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:clickable="true"
+                        android:focusable="true"
                         android:onClick="sendEmail"
                         android:src="@drawable/gmail" />
 
@@ -181,6 +180,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:clickable="true"
+                        android:focusable="true"
                         android:onClick="phoneCall"
                         android:src="@drawable/phone" />
 
@@ -199,6 +199,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:clickable="true"
+                        android:focusable="true"
                         android:onClick="openMap"
                         android:src="@drawable/gmaps" />
 
@@ -211,7 +212,7 @@
                         android:text="@string/address" />
                 </TableRow>
             </TableLayout>
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
